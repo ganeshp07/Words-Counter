@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="container">
+            <div class="title">
+                <h1>Words Counter</h1>
+                <h2>Type the Sentence</h2>
+            </div>
+            <div class="input">
+                <textarea name="sentance-box" id="user-text" rows="4" cols="40"></textarea>
+            </div>
+            <div class="button">
+                <button class="btn" onclick="convert()">Calculate Words</button>
+            </div>
+            <div id="output">
+                
+            </div>
+        </div>
+    </main>
+    <script>
+        function convert(){
+            let input=document.getElementById("user-text").value
+            let output=document.getElementById("output")
+            let para=input.split(" ")
+            let len=para.length
+            output.innerHTML="Total Words :"+len
+        }
+    </script>
+</body>
+</html>

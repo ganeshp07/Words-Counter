@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgba(120, 80,60, 0.8);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#container{
+    width: 380px;
+    height: 430px;
+    text-align: center;
+    background-color: rgba(163, 139, 110, 0.309);
+    margin-top: 80px;
+    border-radius: 25px;
+    box-shadow: 5px 8px 12px black;
+}
+
+h1{
+   color: rgb(255, 255, 255); 
+   text-shadow: black 4px 5px 3px;
+   font-size: 37px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   margin-top: 32px;
+}
+
+h2{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    margin-top: 15px;
+    text-shadow: rgba(0, 0, 0, 0.495) 4px 2px;
+}
+#user-text{
+    margin-top: 12px;
+    height: 180px;
+    width: 325px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 8px;
+    &:focus{
+        outline: none;
+    }
+}
+.btn{
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    &:focus{
+        outline: none;
+        border: 1px solid whitesmoke; 
+        background-color: black;
+        color: white;
+    }
+}
+
+#output{
+    font-size: 22px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 9px;
+}
